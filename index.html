@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Modelo 3D con A-Frame</title>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <!-- Obras de arte-->
+    <!-- Cuadro invierno-->
+    <a-entity gltf-model="url(cuadros/e-ambrose-webster-s-a-brook-in-winter-3d-model/scene.gltf)"
+      position="-19.5 9 -44.8" rotation="0 0 0" scale="15 15 15" class="clickable"
+      data-info="Muestra un paisaje invernal con un arroyo y arboles desnudos, capturado con una atmosfera tranquila y tonos frios." 
+      value="A Brook in Winter de E. Ambrose Webster"></a-entity> 
+      
+    <!-- Cuadro  olivos -->
+      <a-entity gltf-model="url(cuadros/vincent-van-gogh-s-olive-trees-3d-model/scene.gltf)" position="-15 8.3 -74"
+      rotation="0 0 0" scale="2 2 2" class="clickable"
+      data-info="Representa un paisaje vibrante con arboles retorcidos y colores intensos." 
+      value="Los olivos de Vincent van Gogh"></a-entity> 
+
+    <!-- Cuadro Segovia -->
+    <a-entity gltf-model="url(cuadros/ernest-lawson-s-segovia-c-1916-3d-model/scene.gltf)" position="-42 8 -81"
+      rotation="0 98 0" scale="15 20 15" class="clickable"
+      data-info="Retrata un paisaje urbano con luz y color, capturando la esencia de la ciudad de manera impresionista." 
+      value="Segovia de Ernest Lawson"></a-entity> 
+
+    <!-- Cuadro al lado de Segovia -->
+    <a-entity gltf-model="url(cuadros/jmw-turner-s-borrowdale-rosthwaite-bridge-3d-model/scene.gltf)"
+      position="-33.7 10 -70" rotation="0 270 0" scale="11 18 15" class="clickable"
+      data-info="Presenta un paisaje pintoresco con luz suave y colores vibrantes, evocando el campo inglesa." 
+      value="Borrowdale, Rosthwaite Bridge de J.M.W. Turner"></a-entity> 
+
+    <!-- Cuadro dunas -->
+    <a-entity gltf-model="url(cuadros/daubigny-s-the-dunes-at-camiers-3d-model/scene.gltf)" position="-22.99 11 -82"
+      rotation="0 93.8 0" scale="22 22 22" class="clickable"
+      data-info="Presenta un paisaje costero con dunas y un cielo expansivo, utilizando colores suaves e impresionistas." 
+      value="The Dunes at Camiers de Daubigny"></a-entity> 
+
+    <!-- Cuadro final pared -->
+    <a-entity gltf-model="url(cuadros/painel-central-da-ermida-de-sao-pedro-da-ribeira-3d-model/scene.gltf)" position="-0.65 13.3 -94"
+      rotation="0 0 0" scale="1.5 2 1" class="clickable"
+      data-info="Es una obra religiosa portuguesa que representa escenas sagradas con detalles y colores vibrantes. " 
+      value="Panel central da Ermida de Sao Pedro da Ribeira"></a-entity>
+
+
+    <!-- Estatua del león-->
+    <a-entity gltf-model="url(estatuas/leon.glb)" position="-27 -4 -57.2" rotation="0 90 0" scale="0.75 0.75 0.75" class="clickable"
+      data-info="El leon es un gran felino carnivoro de melena imponente que vive en manadas en sabanas y praderas" 
+      value="Estatua del leon">
+    </a-entity>
+
+    <!-- Estatua del delfín-->
+    <a-entity gltf-model="url(estatuas/delfin.glb)" position="-17 -4 -32.2" rotation="0 170 0" scale="0.5 0.5 0.5" class="clickable"
+      data-info="El delfin es un mamifero marino inteligente y sociable que vive en oceanos y algunos rios." 
+      value="Estatua del delfin">
+    </a-entity>
+
+    <!-- Gato llamado Canela, de la entrada-->
+    <a-entity gltf-model="url(estatuas/canela.glb)" position="-10 -4 -26" rotation="-90 -90 0" scale="0.05 0.05 0.05">
+    </a-entity>
+
+    <!-- Gato dentro de la cafeteria-->
+    <a-entity gltf-model="url(estatuas/gatoNaranja.glb)" position="41 -4 -40" rotation="-90 180 0"
+      scale="0.05 0.05 0.05">
+    </a-entity>
+
+    <!-- Perro -->
+    <a-entity gltf-model="url(estatuas/perro.glb)" position="-8 -4 -35" rotation="0 180 0" scale="0.25 0.25 0.25" class="clickable"
+      data-info="El perro es un mamifero domesticado conocido por su lealtad y diversidad en formas." 
+      value="Estatua del perro">
+    </a-entity>
+
+    <!-- Perro hueso-->
+    <a-entity gltf-model="url(estatuas/perroHueso.glb)" position="-12 -4 -35" rotation="0 180 0" scale="0.25 0.25 0.25" class="clickable"
+      data-info="Un perro con un hueso refleja su instinto natural de masticar y guardar alimentos." 
+      value="Estatua del perro con hueso">
+    </a-entity>
+
+    <!-- Gárgola -->
+    <a-entity gltf-model="url(estatuas/gargola.glb)" position="-25 -4 -47.7" rotation="0 90 0" scale="0.25 0.25 0.25" class="clickable"
+      data-info="La gargola es una figura grotesca de la arquitectura gotica usada como desague y proteccion." 
+      value="Estatua de la gargola">
+    </a-entity>
+
+    <!-- Mesas y sillas fuera-->
+    <a-entity gltf-model="url(deco/cafe_fuera.glb)" position="50 -4 -35" rotation="0 180 0" scale="0.12 0.125 0.12">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cafe_fuera.glb)" position="50 -4 -55" rotation="0 180 0" scale="0.12 0.125 0.12">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cafe_fuera.glb)" position="70 -4 -55" rotation="0 180 0" scale="0.12 0.125 0.12">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cafe_fuera.glb)" position="70 -4 -35" rotation="0 180 0" scale="0.12 0.125 0.12">
+    </a-entity>
+
+    <!-- Mesas y sillas dentro-->
+    <a-entity gltf-model="url(deco/mesa_sillas_cafe.glb)" position="19 -4 -35" rotation="0 180 0" scale="0.06 0.07 0.07">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/mesa_sillas_cafe.glb)" position="8 -4 -35" rotation="0 180 0" scale="0.06 0.07 0.07">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/mesa_sillas_cafe.glb)" position="8 -4 -47" rotation="0 180 0" scale="0.06 0.07 0.07">
+    </a-entity>
+
+    <!-- Puertas exteriores -->
+    <a-entity gltf-model="url(deco/puertas_exteriores.glb)" position="32.75 -0.25 -36" rotation="0 90 0" scale="0.7 0.6 1">
+    </a-entity>
+
+    <!-- Bancos -->
+    <a-entity gltf-model="url(deco/nelson_bench_glb.glb)" position="-18 -3.5 -82" rotation="0 180 0" scale="5 5 5">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/nelson_bench_glb.glb)" position="-18 -3.5 -72" rotation="0 180 0" scale="5 5 5">
+    </a-entity>
+
+    <!-- Asientos para la proyección -->
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="20 -1.8 -72" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="28 -1.8 -72" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="20 -1.8 -76" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="28 -1.8 -76" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="28 -1.8 -80" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="20 -1.8 -80" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="28 -1.8 -84" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="20 -1.8 -84" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="28 -1.8 -88" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="20 -1.8 -88" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="28 -1.8 -68" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/cc0_chair_modern.glb)" position="20 -1.8 -68" rotation="0 180 0" scale="4 4 4">
+    </a-entity>
+
+    <!-- Chica sentada -->
+    <a-entity gltf-model="url(elseglb/00295_Elsje0016.glb)" position="-17 -3.7 -83.5" rotation="0 180 0" scale="4 5 4">
+    </a-entity>
+
+    <!-- Texto de museo-->
+    <a-entity gltf-model="url(texto/museo_texto.glb)" position="-1.5 10 -27.3" rotation="90 0 0" scale="0.15 0.05 0.15">
+    </a-entity>
+
+    <!-- Texto de entrada-->
+    <a-entity gltf-model="url(texto/entrada-texto.glb)" position="-1 4 -27.3" rotation="90 0 0" scale="0.05 0.05 0.05">
+    </a-entity>
+
+    <!-- Texto de cafeteria-->
+    <a-entity gltf-model="url(texto/cafeteria-texto.glb)" position="32.2 3 -35.5" rotation="90 90 0" scale="0.05 0.05 0.05">
+    </a-entity>
+
+    <!-- Texto de esculturas-->
+    <a-entity gltf-model="url(texto/esculturas-texto.glb)" position="-4.7 4.7 -58" rotation="90 90 0" scale="0.03 0.03 0.03">
+    </a-entity>
+    
+    <!-- Texto de cuadros-->
+    <a-entity gltf-model="url(texto/cuadros-texto.glb)" position="-4.7 4.7 -66.7" rotation="90 90 0" scale="0.03 0.03 0.03">
+    </a-entity>
+
+    <!-- Texto de proyección-->
+    <a-entity gltf-model="url(texto/proyeccion-texto.glb)" position="3.6 4.7 -66.7" rotation="90 -90 0" scale="0.03 0.03 0.03">
+    </a-entity>
+
+    <!-- Texto de cafetería-->
+    <a-entity gltf-model="url(texto/cafeteria2-texto.glb)" position="3.6 4.7 -58" rotation="90 -90 0" scale="0.03 0.03 0.03">
+    </a-entity>
+
+    <!-- Árboles-->
+    <a-entity gltf-model="url(deco/sm_pine_b_04.glb)" position="80 -5 -66.7" rotation="0 90 0" scale="3 3 3">
+    </a-entity>
+    <a-entity gltf-model="url(deco/sm_pine_b_04.glb)" position="90 -5 -40" rotation="0 90 0" scale="3 3 3">
+    </a-entity>
+    <a-entity gltf-model="url(deco/sm_pine_b_04.glb)" position="60 -5 -80" rotation="0 90 0" scale="3 3 3">
+    </a-entity>
+    <a-entity gltf-model="url(deco/sm_pine_b_04.glb)" position="25 -5 -130" rotation="0 90 0" scale="3 3 3">
+    </a-entity>
+    <a-entity gltf-model="url(deco/sm_pine_b_04.glb)" position="0 -5 -130" rotation="0 90 0" scale="3 3 3">
+    </a-entity>
+    <a-entity gltf-model="url(deco/sm_pine_b_04.glb)" position="-12 -5 5" rotation="0 90 0" scale="3 3 3">
+    </a-entity>
+    <a-entity gltf-model="url(deco/sm_pine_b_04.glb)" position="15 -5 5" rotation="0 90 0" scale="3 3 3">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/sm_pine_b_04.glb)" position="40 -5 -2" rotation="0 90 0" scale="3 3 3">
+    </a-entity>
+    <a-entity gltf-model="url(deco/sm_pine_b_04.glb)" position="60 -5 -5" rotation="0 90 0" scale="3 3 3">
+    </a-entity>
+    <a-entity gltf-model="url(deco/sm_pine_b_04.glb)" position="-78 -5 -20" rotation="0 90 0" scale="3 3 3">
+    </a-entity>
+    <a-entity gltf-model="url(deco/sm_pine_b_04.glb)" position="45 -5 -105" rotation="0 90 0" scale="3 3 3">
+    </a-entity>
+    
+    <!-- Planta-->
+    <a-entity gltf-model="url(deco/photorealistic_plant.glb)" position="31 -4 -42" rotation="0 0 0" scale="4 4 4">
+    </a-entity>
+
+    <a-entity gltf-model="url(deco/potted_monstera_plant.glb)" position="29.5 -4 -29" rotation="0 0 0" scale="1 1 1">
+    </a-entity>
+
+    <!-- Proyección de video -->
+
+    <a-video id="myVideo" src="video2.MP4" position="3.75 11 -82" rotation="0 90 0" width="20" height="20" autoplay loop muted playsinline></a-video>
+
+    <!-- Música sonando -->
+    <a-sound src="url(music.mp3)" autoplay="true" loop="true" volume="1" position="0 2 -5"></a-sound>
+    
+
+    <!-- Cafetería-->
+    <a-entity gltf-model="url(estatuas/cafe.glb)" position="25.47 1 -55.5" rotation="0 180 0" scale="15 15 15">
+    </a-entity>
+
+    <a-plane material="color: #FFFFFF;
+      src: https://media.istockphoto.com/id/506692747/es/foto/c%C3%A9sped-artificial.jpg?s=612x612&w=0&k=20&c=QbW-vBu7XTDiH_GQ6S5R2s4Xx9lAbfQ055cbozQ1fRs=;
+      repeat: 500 500;
+      normal-map: https://media.istockphoto.com/id/506692747/es/foto/c%C3%A9sped-artificial.jpg?s=612x612&w=0&k=20&c=QbW-vBu7XTDiH_GQ6S5R2s4Xx9lAbfQ055cbozQ1fRs=;
+      normal-texture-repeat: 100 100" position="0 -4 -4" rotation="-90 0 0" scale="1000 1000 1"></a-plane>
+
+    <!-- Modelo blender galería-->
+    <a-entity gltf-model="url(museo/museo.gltf)" position="-5 2 -60" rotation="0 0 0"></a-entity>
+    
+    <!-- Cielo -->
+    <a-sky color="#4CC3D9" radius="360"></a-sky>
+
+    <a-entity id="camera" camera look-controls wasd-controls position="0 1.6 0">
+      <a-entity id="raycaster" raycaster="objects: .clickable"></a-entity>
+      <!-- Añadimos un cursor visible -->
+      <a-entity id="cursor" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+        material="color: white" align="center"></a-entity>
+      <!-- Texto de instrucciones -->
+      <a-text id="instruction" value="Acercate a un objeto para interactuar" position="0 -0.75 -1" color="white"
+        scale="0.25 0.25 0.25" align="center"></a-text>
+
+      <!-- Ventana emergente -->
+      <a-entity id="popup" visible="false">
+        <a-plane width="4" height="3" color="#222" position="0 0 -2"> 
+          <a-text id="popup-title" value="" color="#FFF" position="0 1 0" align="center" scale="0.7 0.7 0.7"></a-text>
+          <a-text id="popup-text" value="" color="#FFF" position="0 0 0" align="center" scale="0.5 0.5 0.5"></a-text>
+          <a-text value="Presiona Q para cerrar" color="#FFF" position="0 -1.3 0" align="center"
+            scale="0.3 0.3 0.3"></a-text>
+        </a-plane>
+      </a-entity>
+    </a-entity>
+
+  </a-scene>
+
+  <script>
+    // Video
+    // Forzar la reproducción del video cuando la escena cargue
+    document.addEventListener('DOMContentLoaded', () => {
+    const video = document.querySelector('#myVideo');
+    video.muted = true; // Asegurarse de que está silenciado para la reproducción automática
+    video.play()
+      .then(() => console.log('Video reproduciéndose automáticamente.'))
+      .catch((error) => {
+        console.warn('Reproducción automática bloqueada. Se requiere interacción del usuario.', error);
+      });
+
+    // Si está bloqueado, permite reproducirlo al hacer clic en cualquier parte
+    document.body.addEventListener('click', () => {
+      video.play().catch(console.error);
+    }, { once: true }); // Ejecutar solo una vez
+  });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const video = document.querySelector('#myVideo');
+      const videoPlane = document.querySelector('#videoPlane');
+
+      if (video && videoPlane) {
+        video.addEventListener('loadeddata', () => {
+          video.play().catch(console.error);
+
+          videoPlane.setAttribute('material', {
+            shader: 'video',
+            src: '#myVideo',
+          });
+        });
+      } else {
+        console.error('No se encontraron el video o el plano en el DOM.');
+      }
+    });
+
+    // Sonido
+    document.addEventListener('DOMContentLoaded', () => {
+      const sound = document.querySelector('a-sound');
+      const playSound = () => {
+        sound.components.sound.playSound();
+      };
+  
+    // Intenta reproducir el sonido automáticamente
+    playSound();
+  
+    // Agrega un fallback si el navegador lo bloquea
+    document.addEventListener('click', () => {
+        playSound();
+      }, { once: true }); // Ejecutar solo una vez
+    });
+
+    // Constantes necesarias para poder sacar la información y mostrarla por el panel
+    const raycasterEl = document.querySelector("#raycaster");
+    const interactionTextEl = document.querySelector("#instruction");
+    const popupEl = document.querySelector("#popup");
+    const popupTextEl = document.querySelector("#popup-text");
+    const popupTitleEl = document.querySelector("#popup-title");
+    const cursor = document.querySelector("#cursor");
+
+    let focusedObject = null; // El objeto que está siendo enfocado
+
+    // Configurar raycaster, es decir, donde apunta el cursor, qué tan lejos puese llegar y cada cuánto se fija
+    raycasterEl.setAttribute("raycaster", "objects: .clickable; far: 15; interval: 100");
+
+    // Detectamos los objetos delante nuestro
+    raycasterEl.addEventListener("raycaster-intersection", (event) => {
+      const intersects = raycasterEl.components.raycaster.intersectedEls;
+      focusedObject = intersects.length > 0 ? intersects[0] : null;
+
+      if (focusedObject) { // Si hay un objeto delante, saldrá la instrucción para poder entrar en la información
+        interactionTextEl.setAttribute("value", "Presiona ENTER para interactuar");
+      }
+    });
+
+    // Si no hay un objeto delante mostrara que debe de ponerse delante de un objeto
+    raycasterEl.addEventListener("raycaster-intersection-cleared", () => {
+      focusedObject = null;
+      interactionTextEl.setAttribute("value", "Acercate a un objeto para interactuar");
+    });
+
+    // Capturar teclas de ENTER o ESC para poder entrar y salir del panel de información
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && focusedObject) {
+        const title = focusedObject.getAttribute("value"); // Sacamos el título del objeto
+        const info = focusedObject.getAttribute("data-info"); // Sacamos la información del objeto
+        if (info) {
+          popupTitleEl.setAttribute("value", title); // Mostramos en el panel el título
+          popupTextEl.setAttribute("value", info); // Mostramos en el panel la información del objeto
+          popupEl.setAttribute("visible", true); // Visualizar el panel de información del objeto
+          interactionTextEl.setAttribute("visible", false); // Ocultar texto de la interacción al abrir el panel de información
+          cursor.setAttribute("visible", false); // Ocultar cursor al abrir el panel de información
+        }
+      }
+      if (event.key.toLocaleLowerCase() === "q") {
+        popupEl.setAttribute("visible", false); // Ocultar el panel de información del objeto
+        interactionTextEl.setAttribute("visible", true); // Visualizar texto de la interacción al cerrar el panel de información
+        cursor.setAttribute("visible", true); // Visualizar cursor al abrir el panel de información
+      }
+    });
+
+  </script>
+</body>
+
+</html>
